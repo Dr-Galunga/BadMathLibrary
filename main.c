@@ -8,9 +8,9 @@
 int main()
 {
     //This works right now
-    printf("%f\n", cml_cos(PI/100));
+    printf("%f\n", cml_cos(PI/4));
 
     //This doesn't work right now
-    printf("%f\n", cml_sin(PI/100));
+    printf("%f\n", cml_sin(PI/4));
     return 0;
 }

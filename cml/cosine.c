@@ -46,3 +46,10 @@ double cml_cos(double theta)
 
     return sum;
 }
+
+
+// Arccos function
+double cml_acos(double x)
+{
+    return 0;
+}
