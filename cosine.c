@@ -40,7 +40,9 @@ double cml_cos(double theta)
         }
 
         //Now need to divied by factorial
-        iteration += factorial(n);
+        //Something wrong with the compilation of the factorial right now
+        //Also didn't implement factorial yet so might be a problem
+        iteration += 0;
 
         printf("%f\n", iteration);
 
