@@ -9,6 +9,6 @@ have fun with it.
 ## Functions - 
 
 ### Sine and Cosine -
-    Both of these functions use Maclaurin series to determine their values. Maximum iterations of the series is determined in the header file and can be changed
-    to whatever you want. The only problem is that floating point accuracy can get pretty rough as the terms get really really small.
+Both of these functions use Maclaurin series to determine their values. Maximum iterations of the series is determined in the header file and can be changed
+to whatever you want. The only problem is that floating point accuracy can get pretty rough as the terms get really really small.
     
