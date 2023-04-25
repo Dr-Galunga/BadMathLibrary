@@ -6,5 +6,6 @@
 // Need to make it so it converges for any value by changing how it is centered.
 double cml_ln(double x)
 {
+    
     return 0;   
 }

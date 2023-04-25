@@ -9,25 +9,9 @@
 int main()
 {
 
-    clock_t start, end;
-
-    start = clock();
-
     printf("%f\n", cml_cos(PI/20));
 
-    end = clock();
-
-    printf("Execution Time: %f\n", ((double)end - start) / CLOCKS_PER_SEC);
-
-    start = clock();
-
     printf("%f\n", cml_sin(PI/4));
-
-    end = clock();
-
-    printf("Execution Time: %f\n", ((double)end - start) / CLOCKS_PER_SEC);
-
-
-
+    
     return 0;
 }
