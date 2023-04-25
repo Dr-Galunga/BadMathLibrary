@@ -6,6 +6,7 @@
 
 //I believe this works right now
 
+//TODO: Benchmark this function
 double cml_cos(double theta)
 {
     double sum = 0;

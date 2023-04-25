@@ -4,7 +4,9 @@
 ------------------------------------------------------------------------------------------------------------------------------------------*/
 #include "cmathl.h"
 #include <stdio.h>
+#include <time.h>
 
+//TODO: Benchmark this function
 double cml_sin(double theta)
 {
 
@@ -36,11 +38,12 @@ double cml_sin(double theta)
 
         sum += iteration;
     }
+
     return sum;
 }
 
 // Arcsin function
 double cml_asin(double x)
 {
-
+    return 0;
 }
