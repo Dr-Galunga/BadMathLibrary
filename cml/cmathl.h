@@ -4,7 +4,7 @@
 #define EULER 2.71828182845904523536028747135266249775724709369995 
 
 //Maximum terms in the series calculated
-#define MAX_ITERATIONS 50
+#define MAX_ITERATIONS 32
 
 double cml_cos(double theta);
 double cml_sin(double theta);

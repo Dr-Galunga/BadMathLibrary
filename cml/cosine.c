@@ -6,6 +6,8 @@
 #include "cmathl.h"
 #include <stdio.h>
 
+//I believe this works right now
+
 double cml_cos(double theta)
 {
     double sum = 0;
@@ -16,6 +18,8 @@ double cml_cos(double theta)
         double power = 1;
         double coefficient = 1;
 
+        //Might want to change this to the recursive power() function defined in power.c
+        //Calculate the x^n part of the term
         for(int i = 0; i < 2 * n; i++)
         {
             power *= theta;
@@ -23,35 +27,22 @@ double cml_cos(double theta)
 
         iteration += power;
 
-        //This doesn't work as intended (need to account for edge case of n = 0)
-        //Also doesn't flip the negative sign when it should
-        if(n == 0)
+        //Calculate what sign the 1 should have
+        for(int i = 0; i < n; i++)
         {
-            coefficient = 1;
-            iteration *= coefficient;
-        } else
-        {
-            for(int i = 0; i < n; i++)
-            {
-                coefficient *= -1;
-            }
-
-            iteration *= coefficient;
+            coefficient *= -1;
         }
+
+        iteration *= coefficient;
 
         //Now need to divied by factorial
         //Something wrong with the compilation of the factorial right now
         //Also didn't implement factorial yet so might be a problem
-        iteration += 0;
-
-        printf("%f\n", iteration);
-
+        iteration /= cml_factorial(2 * n);
 
         //Adds the current term to the running sum
         sum += iteration;
     }
-
-
 
     return sum;
 }
