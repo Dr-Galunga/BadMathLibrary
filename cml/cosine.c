@@ -13,6 +13,8 @@ double cml_cos(double theta)
 
     for(int n = 0; n <= MAX_ITERATIONS; n++)
     {
+        //TODO: Need to fix the interval of theta to [0, 2 * PI]
+
         double iteration = 0;
         double power = 1;
         double coefficient = 1;

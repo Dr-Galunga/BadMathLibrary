@@ -6,12 +6,14 @@
 //Could probably do this pretty easily for some of the easier functions like add or scalar multiplication
 //and even normalize but would be really slow with current cos and sin functions
 
+//Maybe add graphing
+
+//Still need to do euler, ln, and log 
+
 int main()
 {
 
     printf("%f\n", cml_cos(PI/20));
 
-    printf("%f\n", cml_sin(PI/4));
-    
     return 0;
 }
