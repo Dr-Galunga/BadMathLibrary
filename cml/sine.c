@@ -1,3 +1,7 @@
+/*------------------------------------------------------------------------------------------------------------------------------------------
+    Implements sin using the Macaluarin Series. Won't be very efficient as compared to more practical sine algorithms but is meant 
+    for educational purposes. Maximum iterations of the series are defined in the cmathl.h header file.
+------------------------------------------------------------------------------------------------------------------------------------------*/
 #include "cmathl.h"
 #include <stdio.h>
 
