@@ -8,12 +8,12 @@
 
 //Maybe add graphing
 
-//Still need to do euler, ln, and log 
+//Still need to do ln and log 
 
 int main()
 {
 
-    printf("%f\n", cml_cos(PI/20));
+    printf("%f\n", cml_cos(PI/2));
 
     return 0;
 }
