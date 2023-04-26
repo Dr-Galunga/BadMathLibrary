@@ -18,7 +18,12 @@ double cml_sin(double theta);
 double cml_asin(double x);
 
 double cml_ln(double x);
+double cml_log(double b, double x);
 double cml_euler(double x);
 
 double cml_power(double b, double x);
 double cml_factorial(double n);
+
+//FOR INTERNAL USE ONLY
+//ONLY USED BY TRIG FUNCTIONS
+double restrict_domain(double theta);

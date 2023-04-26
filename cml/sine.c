@@ -3,12 +3,13 @@
     for educational purposes. Maximum iterations of the series are defined in the cmathl.h header file.
 ------------------------------------------------------------------------------------------------------------------------------------------*/
 #include "cmathl.h"
-#include <stdio.h>
-#include <time.h>
 
-//TODO: Benchmark this function
+
+
 double cml_sin(double theta)
 {
+
+    theta = restrict_domain(theta);
 
     double sum = 0;
 

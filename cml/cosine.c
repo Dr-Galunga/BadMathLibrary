@@ -4,9 +4,8 @@
 ------------------------------------------------------------------------------------------------------------------------------------------*/
 #include "cmathl.h"
 
-//I believe this works right now
 
-//TODO: Benchmark this function
+
 double cml_cos(double theta)
 {
     double sum = 0;
@@ -14,6 +13,7 @@ double cml_cos(double theta)
     for(int n = 0; n <= MAX_ITERATIONS; n++)
     {
         //TODO: Need to fix the interval of theta to [0, 2 * PI]
+        theta = restrict_domain(theta);
 
         double iteration = 0;
         double power = 1;
@@ -53,4 +53,14 @@ double cml_cos(double theta)
 double cml_acos(double x)
 {
     return 0;
+}
+
+double restrict_domain(double theta)
+{
+    if(theta <= 2 * PI)
+    {
+        return theta;
+    }
+
+    return restrict_domain(theta - (2 * PI));
 }

@@ -13,7 +13,8 @@
 int main()
 {
 
-    printf("%f\n", cml_cos(PI/2));
+    printf("%f\n", cml_cos(PI/200));
+    printf("%f\n", cml_sin(PI/200));
 
     return 0;
 }

@@ -11,5 +11,7 @@ typedef enum CML_TYPE
 //Should be generic so it could use any data type
 typedef struct vec2
 {
-    
+    CML_TYPE d_type;
+    void* x;
+    void* y;
 }vec2;
